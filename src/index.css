@@ -1,13 +1,48 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  /* background-color: red; */
+  min-height: 745px;
+  max-height: 745px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
+
+.container form{
+  /* background-color: yellow; */
+  min-width: 1300px;
+  max-width: 1300px;
+  min-height: 600px;
+  max-height: 600px;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  color: black;
+  border: 1px solid  black;
+}
+
+.container form  div{
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input, form select{
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+form label{
+  text-align: left !important;
+}
+
